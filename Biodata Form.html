@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MyBioData</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+
+		.main{
+			width: 50%;
+			height: 40%;
+			backdrop-filter: blur(8px);
+			margin: auto;
+			margin-top: 40px;
+			border-radius: 25px;
+			box-shadow: 1px 1px 15px skyblue;
+
+		}
+
+
+		
+		body{
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bg.jpg') ;
+			background-position: center;
+			background-size: cover;
+		}
+		label, h1{
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="main">
+	<form>
+		<div class="row p-3">
+			<div class="col-md-12">
+				<h1 class="text-center">Bio Data</h1>
+			</div>
+	       <div class="col-md-6">
+	       	  <div class="row p-3">
+	       	  	<div class="col-md-4">
+	       	  		<label for="name">Name</label>
+	       	  	</div>
+	       	  	<div class="col-md-8">
+	       	  		<input type="text" class="form-control" name="name" id="name">
+	       	  	</div>
+	       	  </div>
+		       	<div class="row p-3">
+		       		<div class="col-md-4">
+		       			<label for="gender">Gender</label>
+
+		       		</div>
+		       		<div class="col-md-4">
+		       			<input type="radio" name="gender" id="male" value="Male">
+		       			<label for="male"> Male</label>
+		       		</div>
+
+		       		<div class="col-md-4">
+		       			<input type="radio" name="gender" id="female" value="Female">
+		       			<label for="female"> Female</label>
+		       		</div>
+		       	</div>
+		       	<div class="row p-3">
+	       	  	<div class="col-md-4">
+	       	  		<label for="dob">DOB</label>
+	       	  	</div>
+	       	  	<div class="col-md-8">
+	       	  		<input type="date" class="form-control" name="dob" id="dob">
+	       	  	</div>
+	            </div>
+
+	       	  	<div class="row p-3">
+	       	  	<div class="col-md-4">
+	       	  		<label for="phone">Phone</label>
+	       	  	</div>
+	       	  	<div class="col-md-8">
+	       	  		<input type="tel" class="form-control" name="number" id="phone">
+	       	  	</div>
+	       	  </div>
+
+	       	  	<div class="row p-3">
+	       	  	<div class="col-md-4">
+	       	  		<label for="email">Email</label>
+	       	  	</div>
+	       	  	<div class="col-md-8">
+	       	  		<input type="email" class="form-control" name="mail" id="email">
+	       	  	</div>
+	       	  </div>
+
+	       	  	<div class="row p-3">
+	       	  	<div class="col-md-4">
+	       	  		<label for="addr">Address</label>
+	       	  	</div>
+	       	  	<div class="col-md-8">
+	       	  		<input type="text" class="form-control" name="address" id="addr">
+	       	  	</div>
+	       	  </div>
+
+	       	  	<div class="row p-3 ">
+	       	  	<div class="col-md-4">
+	       	  		<label for="qual">Qualification</label>
+	       	  	</div>
+	       	  	<div class="col-md-8">
+	       	  		<input type="text" class="form-control" name="Qualification" id="qual">
+	       	  	</div>
+	       	  </div>
+
+	       	  	<div class="row p-3">
+	       	  	<div class="col-md-4">
+	       	  		<label for="add-info">AdditionalInfo</label>
+	       	  	</div>
+	       	  	<div class="col-md-8">
+	       	  		<input type="text" class="form-control" name="info" id="add-info" maxlength="200">
+	       	  	</div>
+	       	  </div>
+				
+	       </div>
+	       <div class="col-md-6 p-3">
+	       		<input type="file" class="form-control" name="photo">
+	       </div>
+
+   </div>
+	</form>
+</div>
+
+
+</body>
+</html>
